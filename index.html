@@ -1,103 +1,228 @@
-<!DOCTYPE html>
-<html lang="id">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f7f5ef">
-    <meta name="description" content="Temukan bacaan favoritmu di Jhon Book Store, Medan. Hubungi kami lewat WhatsApp atau kunjungi toko.">
-    <title>Jhon Book Store — Medan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3e8d2">
+    <meta name="description" content="Jhon Bookstore is a cozy independent bookstore and café for books, music, coffee, and unhurried afternoons.">
+    <title>Jhon Bookstore — Books, Music &amp; Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <a class="brand" href="#" aria-label="Jhon Book Store, beranda">
-            <span class="brand-mark" aria-hidden="true">jb</span>
-            <span>Jhon <strong>Book Store</strong></span>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="home">
+        <a class="wordmark" href="#home" aria-label="Jhon Bookstore home">
+            <span class="wordmark-symbol" aria-hidden="true">j.</span>
+            <span class="wordmark-name">JHON<br>BOOKSTORE</span>
         </a>
-        <a class="header-location" href="https://maps.app.goo.gl/r7G2UarMy3HanQKs5" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <span>Lihat lokasi</span>
-        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+                <span></span><span></span>
+            </button>
+            <ul class="nav-links" id="primary-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#cafe">Café</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <main id="main">
+        <section class="hero page-wrap" aria-labelledby="hero-title">
             <div class="hero-copy">
-                <p class="eyebrow"><span></span> Toko buku di Medan</p>
-                <h1>Selalu ada cerita yang <em>menunggumu.</em></h1>
-                <p class="hero-description">Temukan bacaan untuk menemani hari-harimu. Ada yang ingin ditanyakan? Kami siap membantu.</p>
-                <div class="hero-actions">
-                    <a class="button button-dark" href="https://wa.me/6285359453017?text=Halo%20Jhon%20Book%20Store%2C%20saya%20ingin%20bertanya%20tentang%20buku." target="_blank" rel="noopener noreferrer">
-                        Chat kami <span aria-hidden="true">↗</span>
-                    </a>
-                    <a class="text-link" href="https://maps.app.goo.gl/r7G2UarMy3HanQKs5" target="_blank" rel="noopener noreferrer">
-                        Temukan toko <span aria-hidden="true">→</span>
-                    </a>
+                <p class="eyebrow"><span class="eyebrow-rule"></span> Books · Music · Coffee</p>
+                <h1 id="hero-title">Somewhere between pages <em>and melodies.</em></h1>
+                <p class="hero-intro">A little room for good books, records worth replaying, and one more cup of coffee.</p>
+                <a class="button button-dark" href="#collections">Come on in <span aria-hidden="true">↗</span></a>
+                <p class="hero-note">An independent bookstore &amp; café</p>
+            </div>
+            <figure class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+                    alt="A warm, quiet bookstore lined with floor-to-ceiling bookshelves"
+                    width="1400"
+                    height="1100"
+                    fetchpriority="high"
+                >
+                <figcaption><span>Take your time.</span> There is no hurry here.</figcaption>
+            </figure>
+            <span class="hero-index" aria-hidden="true">EST. WITH A LOVE OF STORIES</span>
+        </section>
+
+        <section class="introduction section-wrap" aria-labelledby="intro-title">
+            <p class="section-label"><span>01</span> A place to pause</p>
+            <div class="intro-content">
+                <h2 id="intro-title">A good story.<br>A favorite record.<br><em>Something warm to sip.</em></h2>
+                <div class="intro-aside">
+                    <p>Jhon Bookstore brings together the things that make an ordinary afternoon feel like your own: shelves to wander, music to settle into, and a café made for staying a little longer.</p>
+                    <a class="text-link" href="#about">Get to know our little room <span aria-hidden="true">→</span></a>
                 </div>
             </div>
-            <div class="book-art" aria-label="Ilustrasi tumpukan buku" role="img">
-                <div class="sun"></div>
-                <div class="book book-back"><span>IDE &amp; INSPIRASI</span></div>
-                <div class="book book-middle"><span>CERITA KECIL</span></div>
-                <div class="book book-front"><span>BUKA<br>HALAMAN<br>BARU</span><i></i></div>
-                <div class="plant"><span></span><span></span><span></span><b></b></div>
-                <span class="art-caption">bacaan untuk setiap rasa</span>
+        </section>
+
+        <section class="collections section-wrap" id="collections" aria-labelledby="collections-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label"><span>02</span> Browse a while</p>
+                    <h2 id="collections-title">The things we <em>keep close.</em></h2>
+                </div>
+                <p class="section-aside">A few favorite ways to spend an afternoon. Always something new to discover.</p>
+            </div>
+            <div class="collection-grid">
+                <article class="collection-item" id="books">
+                    <a class="collection-image" href="#visit" aria-label="Ask us about the book collection">
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Books arranged together on a wooden shelf" width="900" height="1100" loading="lazy">
+                        <span class="image-number">01 / READ</span>
+                    </a>
+                    <p class="item-kicker">For the curious</p>
+                    <h3>Books</h3>
+                    <p>Stories, ideas, and well-loved pages waiting to be found.</p>
+                </article>
+                <article class="collection-item" id="music">
+                    <a class="collection-image" href="#visit" aria-label="Ask us about the vinyl record collection">
+                        <img src="https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A vinyl record spinning on a turntable" width="900" height="1100" loading="lazy">
+                        <span class="image-number">02 / LISTEN</span>
+                    </a>
+                    <p class="item-kicker">For the long way home</p>
+                    <h3>Vinyl records</h3>
+                    <p>Album-sized art and the lovely sound of dropping a needle.</p>
+                </article>
+                <article class="collection-item">
+                    <a class="collection-image" href="#visit" aria-label="Ask us about the cassette tape collection">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Audio equipment in a warm, intimate music listening space" width="900" height="1100" loading="lazy">
+                        <span class="image-number">03 / REWIND</span>
+                    </a>
+                    <p class="item-kicker">For the mixtape makers</p>
+                    <h3>Cassette tapes</h3>
+                    <p>Small, nostalgic, and made to be listened to all over again.</p>
+                </article>
             </div>
         </section>
 
-        <section class="welcome" aria-label="Tentang toko">
-            <div class="welcome-number">01 <span>—</span> 03</div>
-            <div>
-                <h2>Ruang kecil untuk<br><em>ide-ide besar.</em></h2>
+        <section class="cafe" id="cafe" aria-labelledby="cafe-title">
+            <div class="cafe-image">
+                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Sunlit café interior with a welcoming counter and warm wood details" width="1400" height="1000" loading="lazy">
+                <span class="photo-stamp" aria-hidden="true">A SEAT<br>IS WAITING</span>
             </div>
-            <p>Dari halaman pertama sampai terakhir, semoga kamu menemukan sesuatu yang berkesan. Mampir atau hubungi kami untuk mencari buku yang kamu inginkan.</p>
+            <div class="cafe-copy">
+                <p class="section-label"><span>03</span> From the café</p>
+                <h2 id="cafe-title">Stay for <em>one more.</em></h2>
+                <p>Come by for coffee, something to sip, or a little treat alongside your next chapter. Take a seat and make yourself at home.</p>
+                <div class="menu-note">
+                    <span class="mono-label">THE MENU</span>
+                    <p>Our coffee, drinks, and food menu will be shared here soon.</p>
+                    <span class="menu-categories">Coffee <i>·</i> Drinks <i>·</i> Food &amp; pastries</span>
+                </div>
+                <a class="text-link" href="#visit">Plan a visit <span aria-hidden="true">→</span></a>
+            </div>
         </section>
 
-        <section class="visit-card">
-            <div class="visit-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <section class="atmosphere section-wrap" aria-labelledby="atmosphere-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label"><span>04</span> A little look around</p>
+                    <h2 id="atmosphere-title">Room to read, <em>room to listen.</em></h2>
+                </div>
+                <p class="section-aside">Settle into a quiet corner, browse the shelves, or let the music play.</p>
             </div>
-            <div class="visit-copy">
-                <p class="eyebrow">Mampir, yuk</p>
-                <h2>Kunjungi toko kami</h2>
-                <p>Jhon Book Store · Medan</p>
+            <div class="gallery">
+                <figure class="gallery-item gallery-tall">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A comfortable reading nook filled with soft natural light" width="1000" height="1200" loading="lazy">
+                    <figcaption>Find your quiet corner.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Rows of books on a well-stocked independent bookstore shelf" width="1000" height="760" loading="lazy">
+                    <figcaption>Stay for another shelf.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A record player ready for a favorite album" width="1000" height="760" loading="lazy">
+                    <figcaption>Let the record play.</figcaption>
+                </figure>
             </div>
-            <a class="map-link" href="https://maps.app.goo.gl/r7G2UarMy3HanQKs5" target="_blank" rel="noopener noreferrer" aria-label="Buka lokasi Jhon Book Store di Google Maps">
-                Buka Maps <span aria-hidden="true">↗</span>
-            </a>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A cozy café and bookshop space made for reading and conversation" width="1400" height="1000" loading="lazy">
+            </div>
+            <div class="about-copy">
+                <p class="section-label"><span>05</span> Jhon Bookstore</p>
+                <h2 id="about-title">A softer sort of <em>everyday.</em></h2>
+                <p>We imagine a neighborhood room where a bookshop, listening space, and café can all share the same slow afternoon. Come for one thing; stay for the feeling of being here.</p>
+                <span class="about-signoff">Pages turned, records played, coffee poured.</span>
+            </div>
+        </section>
+
+        <section class="visit section-wrap" id="visit" aria-labelledby="visit-title">
+            <div class="visit-heading">
+                <p class="section-label"><span>06</span> Come find us</p>
+                <h2 id="visit-title">There’s a place <em>for you here.</em></h2>
+            </div>
+            <div class="visit-details">
+                <address>
+                    <span class="mono-label">ADDRESS</span>
+                    <p>Physical address to be added.</p>
+                </address>
+                <div>
+                    <span class="mono-label">OPENING HOURS</span>
+                    <p>Opening hours to be added.</p>
+                </div>
+                <div>
+                    <span class="mono-label">SAY HELLO</span>
+                    <p><a class="visit-contact" href="https://wa.me/6285359453017?text=Halo%20Jhon%20Bookstore%2C%20saya%20ingin%20bertanya.">+62 853-5945-3017 <span aria-hidden="true">↗</span></a></p>
+                </div>
+                <div>
+                    <span class="mono-label">FOLLOW ALONG</span>
+                    <p>Social media links to be added.</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <a class="brand footer-brand" href="#">
-            <span class="brand-mark" aria-hidden="true">jb</span>
-            <span>Jhon <strong>Book Store</strong></span>
-        </a>
-        <p>Temukan cerita favoritmu.</p>
-        <span class="copyright">© <span id="year"></span> Jhon Book Store</span>
+    <footer class="site-footer">
+        <div class="footer-main">
+            <a class="wordmark footer-wordmark" href="#home" aria-label="Jhon Bookstore, back to top">
+                <span class="wordmark-symbol" aria-hidden="true">j.</span>
+                <span class="wordmark-name">JHON<br>BOOKSTORE</span>
+            </a>
+            <p class="footer-note">A little room for books, music<br>and the unhurried things.</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#books">Books</a>
+                <a href="#music">Music</a>
+                <a href="#cafe">Café</a>
+                <a href="#about">About</a>
+                <a href="#visit">Visit</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> Jhon Bookstore</span>
+            <span>Made for slow afternoons.</span>
+        </div>
     </footer>
 
-    <aside class="chat-widget" aria-label="Chat WhatsApp">
-        <div class="chat-card" id="chat-card">
-            <button class="chat-close" id="chat-close" type="button" aria-label="Tutup info chat">×</button>
-            <div class="chat-avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M20.5 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-4.8a8.4 8.4 0 1 1 16.3-3.7Z"/><path d="M8.5 8.5c.3-.6.6-.6.9-.6h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1.1 1.3 1.8 1.7.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-.7-.2-1.5-.5-2.5-1.4-1.3-1.1-2.1-2.5-2.4-3.2-.3-.8 0-1.5.3-1.8Z"/></svg>
-            </div>
-            <div class="chat-message">
-                <span class="chat-status"><i></i> Chat langsung dengan kami</span>
-                <strong>Halo, ada yang bisa kami bantu?</strong>
-                <span>Chat kami langsung di WhatsApp.</span>
-            </div>
-            <a class="chat-start" href="https://wa.me/6285359453017?text=Halo%20Jhon%20Book%20Store%2C%20saya%20ingin%20bertanya%20tentang%20buku." target="_blank" rel="noopener noreferrer">
+    <aside class="whatsapp-widget" aria-label="Chat with Jhon Bookstore on WhatsApp">
+        <div class="whatsapp-card" id="whatsapp-card">
+            <button class="whatsapp-close" id="whatsapp-close" type="button" aria-label="Close WhatsApp chat message">×</button>
+            <span class="whatsapp-kicker">JHON BOOKSTORE</span>
+            <h2>Need a little help?</h2>
+            <p>Ask us about books, music, or the café. We’d love to hear from you.</p>
+            <a class="whatsapp-start" href="https://wa.me/6285359453017?text=Halo%20Jhon%20Bookstore%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-4.8a8.4 8.4 0 1 1 16.3-3.7Z"/><path d="M8.5 8.5c.3-.6.6-.6.9-.6h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1.1 1.3 1.8 1.7.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-.7-.2-1.5-.5-2.5-1.4-1.3-1.1-2.1-2.5-2.4-3.2-.3-.8 0-1.5.3-1.8Z"/></svg>
-                Mulai chat WhatsApp <span aria-hidden="true">↗</span>
+                Start a private chat <span aria-hidden="true">↗</span>
             </a>
         </div>
-        <button class="chat-toggle" id="chat-toggle" type="button" aria-expanded="true" aria-controls="chat-card">
-            <svg class="toggle-chat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-4.8a8.4 8.4 0 1 1 16.3-3.7Z"/><path d="M8.5 8.5c.3-.6.6-.6.9-.6h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1.1 1.3 1.8 1.7.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-.7-.2-1.5-.5-2.5-1.4-1.3-1.1-2.1-2.5-2.4-3.2-.3-.8 0-1.5.3-1.8Z"/></svg>
-            <svg class="toggle-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
-            <span class="toggle-label">Chat WhatsApp</span>
+        <button class="whatsapp-toggle" id="whatsapp-toggle" type="button" aria-expanded="true" aria-controls="whatsapp-card" aria-label="Close WhatsApp chat message">
+            <svg class="whatsapp-toggle-chat" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-4.8a8.4 8.4 0 1 1 16.3-3.7Z"/><path d="M8.5 8.5c.3-.6.6-.6.9-.6h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1.1 1.3 1.8 1.7.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-.7-.2-1.5-.5-2.5-1.4-1.3-1.1-2.1-2.5-2.4-3.2-.3-.8 0-1.5.3-1.8Z"/></svg>
+            <svg class="whatsapp-toggle-close" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+            <span>Chat privately</span>
         </button>
     </aside>
 </body>
